@@ -67,7 +67,7 @@ The application generates personalized study recommendations based on exam dates
 
 ### Dark Mode
 
-![Dark Mode](screenshots/dark-mode.png)
+![Dark Mode](screenshots/dark%20mode.png)
 
 ### Study Recommendations
 
@@ -75,7 +75,7 @@ The application generates personalized study recommendations based on exam dates
 
 ### PDF Export
 
-![PDF Export](screenshots/pdf-export.png)
+![PDF Export](screenshots/pdf_export.png)
 ---
 
 ## 🚀 How To Run
