@@ -1,0 +1,296 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+ background:
+linear-gradient(
+180deg,
+#f8fafc,
+#eef2ff
+);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background: white;
+    width: 1100px;
+    max-width: 95%;
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+h1{
+    text-align:center;
+    font-size:52px;
+    font-weight:800;
+    color:#111827;
+    letter-spacing:-1px;
+}
+p {
+    text-align: center;
+    color: #6b7280;
+}
+
+
+input,
+select {
+    width: 95%;
+    padding: 12px;
+    margin-top: 12px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+button{
+    width:100%;
+    padding:14px;
+    margin-top:18px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+    color:white;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 10px 20px rgba(102,126,234,0.25);
+}
+
+.task{
+    background:#ffffff;
+    border:1px solid #e5e7eb;
+    border-radius:16px;
+    padding:18px;
+    margin-top:18px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.04);
+    transition:0.3s;
+}
+.task:hover{
+    transform:translateY(-2px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+#stats{
+    display:flex;
+    justify-content:space-between;
+    margin:20px 0;
+    gap:10px;
+}
+
+.stat-box{
+    flex:1;
+    background:white;
+    border:1px solid #e5e7eb;
+    padding:20px;
+    border-radius:16px;
+    text-align:center;
+    box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.stat-box h3{
+    margin:0;
+    font-size:28px;
+    font-weight:700;
+    color:#111827;
+}
+footer{
+    text-align:center;
+    margin-top:20px;
+    color:white;
+    font-size:14px;
+}
+#recommendations{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+    margin-top:20px;
+}
+.progress-container{
+    margin:25px 0;
+}
+
+.progress-bar{
+    width:100%;
+    height:12px;
+    background:#e5e7eb;
+    border-radius:20px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    width:0%;
+    height:100%;
+    background:#667eea;
+    transition:0.5s;
+}
+.task h3{
+    font-size:24px;
+    margin-bottom:15px;
+    color:#111827;
+}
+
+.task p{
+    text-align:left;
+    margin:8px 0;
+    color:#4b5563;
+}
+
+.delete-btn{
+    background:#ef4444;
+    width:auto;
+    padding:10px 18px;
+    border-radius:8px;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+.container{
+    display:block !important;
+}
+
+#stats{
+    display:flex;
+    gap:15px;
+}
+
+#taskList{
+    display:block !important;
+}
+
+#recommendations{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+#todayDate{
+    text-align:center;
+    color:#6b7280;
+    font-size:15px;
+    margin-top:10px;
+    margin-bottom:20px;
+}
+#quote{
+    text-align:center;
+    font-size:18px;
+    font-weight:500;
+    margin:25px 0;
+    color:#cbd5e1;
+}
+.dark{
+    background:#111827;
+}
+
+.dark .container{
+    background:#1f2937;
+}
+
+.dark h1,
+.dark h2,
+.dark h3{
+    color:white;
+}
+
+.dark p,
+.dark label{
+    color:#d1d5db;
+}
+
+.dark input,
+.dark select{
+    background:#374151;
+    color:white;
+    border:1px solid #4b5563;
+}
+
+.dark .task{
+    background:#374151;
+    border:1px solid #4b5563;
+}
+
+.dark .stat-box{
+    background:#374151;
+    border:1px solid #4b5563;
+}
+.dark h1{
+    color:white;
+}
+
+.dark p{
+    color:#d1d5db;
+}
+
+.dark h2{
+    color:white;
+}
+
+.dark .task{
+    background:#374151;
+    border-color:#4b5563;
+}
+
+.dark .stat-box{
+    background:#374151;
+    border-color:#4b5563;
+}
+
+.dark .task p{
+    color:#d1d5db;
+}
+
+.dark .task h3{
+    color:white;
+}
+.top-controls{
+    display:flex;
+    justify-content:flex-end;
+    margin:20px 0;
+}
+
+#themeBtn{
+    width:auto !important;
+    padding:10px 18px;
+    border-radius:10px;
+    font-size:14px;
+    font-weight:600;
+}
+.task{
+    position:relative;
+    overflow:hidden;
+}
+.task::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:5px;
+    height:100%;
+    background:#667eea;
+}
+.completed{
+    opacity:0.7;
+    text-decoration:line-through;
+}
+.pdf-btn{
+    margin-top:10px;
+    background:linear-gradient(
+        135deg,
+        #10b981,
+        #059669
+    );
+}
+
+.pdf-btn:hover{
+    background:linear-gradient(
+        135deg,
+        #059669,
+        #047857
+    );
+}

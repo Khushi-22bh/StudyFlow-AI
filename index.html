@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyFlow AI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>StudyFlow AI</h1>
+
+        <p>Your Personal AI-Powered Study Planner</p>
+        <p id="todayDate"></p>
+   <div class="top-controls">
+    <button id="themeBtn" onclick="toggleTheme()">
+        🌙 Dark Mode
+    </button>
+</div>
+        <div id="quote">
+            Plan smarter • Study better • Stress less
+        </div>
+
+        <div id="stats">
+
+            <div class="stat-box">
+                <h3 id="subjectCount">0</h3>
+                <p>Subjects</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="examCount">0</h3>
+                <p>Exams</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="totalHours">0</h3>
+                <p>Hours</p>
+            </div>
+
+            <div class="stat-box">
+                <h3 id="progressPercent">0%</h3>
+                <p>Progress</p>
+            </div>
+
+        </div>
+        <div id="progressMessage"></div>
+
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div id="progressFill" class="progress-fill"></div>
+            </div>
+        </div>
+
+        <input
+            type="text"
+            id="subject"
+            placeholder="Subject Name">
+
+        <input
+            type="date"
+            id="examDate">
+
+        <input
+            type="number"
+            id="hours"
+            placeholder="Hours Needed">
+
+        <select id="priority">
+            <option value="High">🔴 High Priority</option>
+            <option value="Medium">🟡 Medium Priority</option>
+            <option value="Low">🟢 Low Priority</option>
+        </select>
+<button onclick="addTask()">
+    Add Task
+</button>
+
+<button onclick="exportPDF()" class="pdf-btn">
+    📄 Export Study Plan
+</button>
+        <h2>My Tasks</h2>
+
+        <div id="taskList"></div>
+
+        <h2>Study Recommendations</h2>
+
+        <div id="recommendations"></div>
+
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+    
+
+</body>
+
+</html>
