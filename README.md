@@ -62,17 +62,20 @@ The application generates personalized study recommendations based on exam dates
 ## 📸 Screenshots
 
 ### Dashboard
-(Add screenshot here)
+
+![Dashboard](screenshots/dashboard.png)
 
 ### Dark Mode
-(Add screenshot here)
+
+![Dark Mode](screenshots/dark-mode.png)
 
 ### Study Recommendations
-(Add screenshot here)
+
+![Recommendations](screenshots/recommendations.png)
 
 ### PDF Export
-(Add screenshot here)
 
+![PDF Export](screenshots/pdf-export.png)
 ---
 
 ## 🚀 How To Run
