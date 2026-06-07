@@ -75,7 +75,7 @@ The application generates personalized study recommendations based on exam dates
 
 ### PDF Export
 
-![PDF Export](screenshots/pdf_export.png)
+![PDF Export](screenshots/export_pdf.png)
 ---
 
 ## 🚀 How To Run
